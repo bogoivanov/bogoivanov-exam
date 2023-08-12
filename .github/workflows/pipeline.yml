@@ -21,6 +21,9 @@ jobs:
       with:
         node-version: 14.x
         cache: 'npm'
-    - run: npm install
-    - run: npm run test:unit
-    - run: echo "bogoivanov"
+    - name: Installing NPM
+      run: npm install
+    - name: Running UnitTests
+      run: npm run test:unit
+    - name: Display SoftUni username  
+      run: echo "bogoivanov"
